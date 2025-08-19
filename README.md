@@ -1,8 +1,10 @@
 # Learning OpenGL
 
+![Triangle](./meta/triangle.png)
+
 This repository documents my journey of (hopefully) learning graphics programming. The textbook I'm reading is V. Scott Gordon, and John Clevenger, _Computer Graphics Programming in OpenGL with C++_, for more information see [references](#references).
 
-I'm using C++23 with [modules](https://en.cppreference.com/w/cpp/language/modules.html), the [CMake](https://cmake.org) build system, and the [vcpkg](https://github.com/microsoft/vcpkg) package manager.
+I'm using C++23 with [modules](https://en.cppreference.com/w/cpp/language/modules.html), the [CMake](https://cmake.org) build system, and the [vcpkg](https://github.com/microsoft/vcpkg) package manager. Dependencies include but not limited to: [GLFW](https://www.glfw.org/), [GLEW](https://glew.sourceforge.net/), and [GLM](https://github.com/g-truc/glm).
 
 ## Building
 
