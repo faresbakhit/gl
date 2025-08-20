@@ -4,6 +4,7 @@ module;
 
 export module lib.hello;
 
-export void hello_world() {
+export void hello_world()
+{
     std::println("Hello, world!");
 }

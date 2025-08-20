@@ -17,6 +17,10 @@ add_library(lib)
 target_sources(lib
   PUBLIC FILE_SET modules TYPE CXX_MODULES
   FILES ${LIB_SOURCES})
+target_link_libraries(lib
+  PUBLIC glfw
+  PUBLIC glm::glm
+  PUBLIC GLEW::GLEW)
 
 find_package(glfw3 CONFIG REQUIRED)
 find_package(GLEW CONFIG REQUIRED)
@@ -26,9 +30,5 @@ file(GLOB BIN_SOURCES CONFIGURE_DEPENDS bin/*.cpp)
 foreach(bin_src ${BIN_SOURCES})
   get_filename_component(bin_name ${bin_src} NAME_WE)
   add_executable(${bin_name} ${bin_src})
-  target_link_libraries(${bin_name}
-    PRIVATE lib
-    PRIVATE glfw
-    PRIVATE glm::glm
-    PRIVATE GLEW::GLEW)
+  target_link_libraries(${bin_name} PRIVATE lib)
 endforeach()
