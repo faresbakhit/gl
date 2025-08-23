@@ -1,8 +1,7 @@
 # Learning OpenGL
 
-![Triangle](./meta/triangle.png)
-
-![Cube](./meta/cube.png)
+| [![Triangle](./meta/triangle.png)](https://github.com/faresbakhit/gl/blob/3852f0ad22552fa71309d6abbf4e9ab345ff7e8c/lib/window.cxx) | [![Cube](./meta/cube.png)](https://github.com/faresbakhit/gl/blob/104f05d64e325469baeaa1b94c1d074268dfcd42/bin/cube.cpp) |
+| - | -|
 
 This repository documents my journey of (hopefully) learning graphics programming. The textbook I'm reading is V. Scott Gordon, and John Clevenger, _Computer Graphics Programming in OpenGL with C++_, for more information see [references](#references).
 
